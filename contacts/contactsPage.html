@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Rashevi website - Contacts</title>
+            <link rel="stylesheet" href="contactsStyle.css">
+    </head>
+
+    <body>
+        <header id="navbar-placeholder"></header>
+      
+        <script>
+            fetch('../navigation/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+        </script>
+
+
+        <section class="intro">
+            <h1 class="contacts-header">Контакти с нас</h1>
+            <p>За каквито и да е въпроси както и за поръчки не се колебайте да се свържете с нас</p>
+        </section>
+
+        <section id="banner-placeholder"></section>
+
+        <script>
+            fetch('../banner/bannerbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('banner-placeholder').innerHTML = data;
+        });
+        </script>
+
+
+        <section class="contacts-section">
+                <section class="contacts-list">
+                    <h1>Относно заявки, поръчки, цени и наличности:</h1>
+                    <article class="person">
+                        <img src="../images/20200603_142317.jpg" alt="">
+                        <div class="person-info">
+
+                            <h2>Анита Рашева</h2>
+                            <p>Телефон за връзка: 0898328314</p>
+                            <p>Email: ahr@abv.bg</p>
+                        </div>
+                    </article>
+
+                    <h1>Относно съвети, оборудване и технически въпроси:</h1>
+                    <article class="person">
+                        <img src="../images/20200603_141916.jpg" alt="">
+                        <div class="person-info">
+                            <h2>Ростислав Рашев</h2>
+                            <p>Телефон за връзка: 0885522380</p>
+                            <p>Email: rostysz1975@gmail.com</p>
+                        </div>
+                    </article>
+                </section>
+        </section>
+    </body>
+
+</html>

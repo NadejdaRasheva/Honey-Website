@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Rashevi website</title>
+            <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="background">
+            <header id="navbar-placeholder"></header>
+        
+            <script>
+                fetch('../navigation/navbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+            </script>
+
+            <section class="intro">
+                <h1>Пчеларска ферма Рашеви</h1>
+                <p>Добре дошли в света на пчелите</p>
+            </section>
+
+            <section id="banner-placeholder"></section>
+
+            <script>
+                fetch('../banner/bannerbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                document.getElementById('banner-placeholder').innerHTML = data;
+            });
+            </script>
+
+            <section class="full-width-banner">
+                <div class="banner-text">
+                    <h1>Малко повече за нас</h1>
+                    <p>
+                        Нашата ферма добива този дар на природата - пчелен мед в района на Горнотракийската низина и склоновете на Средна гора, където се намират пчелините ни. Това са места, известни с огромното си биоразнообразие, което ни дава възможност да ви предложим много различни вкусове. За да запазим всички здравословни качества на нашия мед, ние ви го предлагаме без никаква преработка, напълно натурален.
+                    </p>
+                </div>
+                    <img src="../images/IMG_8385.jpg" class="banner-picture">
+            </section>
+        </div>
+        
+    </body>
+
+</html>

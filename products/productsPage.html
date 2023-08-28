@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Rashevi website - Products</title>
+            <link rel="stylesheet" href="productsStyle.css">
+    </head>
+
+    <body>
+        <header id="navbar-placeholder"></header>
+      
+        <script>
+            fetch('../navigation/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+        </script>
+
+
+        <section class="intro">
+            <h1 class="products-header">Нашите продукти</h1>
+            <p>Това са нашите продукти и предложения</p>
+        </section>
+
+        <section id="banner-placeholder"></section>
+
+        <script>
+            fetch('../banner/bannerbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('banner-placeholder').innerHTML = data;
+        });
+        </script>
+
+        <section class="products">
+            <ul class="products-list">
+                <li>
+                    <img src="../images/IMG_8120.jpg" alt="akaciq">
+                    <article class="product-info">
+                        <h2>Мед Акация</h2>
+                        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi ad exercitationem non quisquam culpa mollitia nulla quam, laborum eveniet nesciunt fugit quaerat animi, vel, quas dolorem molestiae quidem. Alias?</p>
+                        <section class="bussiness-info">
+                            <p class="qty">Количество: 350г</p>
+                            <p class="price">Цена: 5.00лв</p>
+                        </section>
+                    </article>
+                </li>
+
+                <li>
+                    <img src="../images/IMG_8061.jpg" alt="gorski-buket">
+                    <article class="product-info">
+                        <h2>Мед Горски букет</h2>
+                        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi ad exercitationem non quisquam culpa mollitia nulla quam, laborum eveniet nesciunt fugit quaerat animi, vel, quas dolorem molestiae quidem. Alias?</p>
+                        <section class="bussiness-info">
+                            <p class="qty">Количество: 410г</p>
+                            <p class="price">Цена: 5.00лв</p>
+                        </section>
+                    </article>
+                </li>
+
+                <li>
+                    <img src="../images/IMG_8109.jpg" alt="buket">
+                    <article class="product-info">
+                        <h2>Мед Букет</h2>
+                        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi ad exercitationem non quisquam culpa mollitia nulla quam, laborum eveniet nesciunt fugit quaerat animi, vel, quas dolorem molestiae quidem. Alias?</p>
+                        <section class="bussiness-info">
+                            <p class="qty">Количество: 410г</p>
+                            <p class="price">Цена: 5.00лв</p>
+                        </section>
+                    </article>
+                </li>
+
+                <li>
+                    <img src="../images/IMG_8139.jpg" alt="lipa">
+                    <article class="product-info">
+                        <h2>Мед Липа</h2>
+                        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi ad exercitationem non quisquam culpa mollitia nulla quam, laborum eveniet nesciunt fugit quaerat animi, vel, quas dolorem molestiae quidem. Alias?</p>
+                        <section class="bussiness-info">
+                            <p class="qty">Количество: 410г</p>
+                            <p class="price">Изчерпан!</p>
+                        </section>
+                    </article>
+                </li>
+
+                <li>
+                    <img src="../images/IMG_8224.jpg" alt="akaciq-big">
+                    <article class="product-info">
+                        <h2>Мед Акция</h2>
+                        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi ad exercitationem non quisquam culpa mollitia nulla quam, laborum eveniet nesciunt fugit quaerat animi, vel, quas dolorem molestiae quidem. Alias?</p>
+                        <section class="bussiness-info">
+                            <p class="qty">Количество: 950г</p>
+                            <p class="price">Цена: 14.00лв</p>
+                        </section>
+                    </article>
+                </li>
+
+                <li>
+                    <img src="../images/IMG_8238.jpg" alt="gorski-buket-big">
+                    <article class="product-info">
+                        <h2>Мед Горски букет</h2>
+                        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi ad exercitationem non quisquam culpa mollitia nulla quam, laborum eveniet nesciunt fugit quaerat animi, vel, quas dolorem molestiae quidem. Alias?</p>
+                        <section class="bussiness-info">
+                            <p class="qty">Количество: 950г</p>
+                            <p class="price">Цена: 12.00лв</p>
+                        </section>
+                    </article>
+                </li>
+
+                <li>
+                    <img src="../images/IMG_8292.jpg" alt="buket-big">
+                    <article class="product-info">
+                        <h2>Мед Букет</h2>
+                        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi ad exercitationem non quisquam culpa mollitia nulla quam, laborum eveniet nesciunt fugit quaerat animi, vel, quas dolorem molestiae quidem. Alias?</p>
+                        <section class="bussiness-info">
+                            <p class="qty">Количество: 950г</p>
+                            <p class="price">Цена: 10.00лв</p>
+                        </section>
+                    </article>
+                </li>
+
+                <li>
+                    <img src="../images/IMG_8422.jpg" alt="lipa-big">
+                    <article class="product-info">
+                        <h2>Мед Липа</h2>
+                        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sequi ad exercitationem non quisquam culpa mollitia nulla quam, laborum eveniet nesciunt fugit quaerat animi, vel, quas dolorem molestiae quidem. Alias?</p>
+                        <section class="bussiness-info">
+                            <p class="qty">Количество: 950г</p>
+                            <p class="price">Изчерпан!</p>
+                        </section>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </body>
+</html>
