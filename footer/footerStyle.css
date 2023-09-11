@@ -1,0 +1,38 @@
+.site-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffffff;
+    margin-top: 50px;
+    padding: 40px 20px 20px 20px;
+}
+
+.site-footer img{
+    width: 40%;
+    margin: 10px;
+}
+
+.site-footer h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.site-footer h2{
+    font-weight: 300;
+}
+.site-footer .contacts h3{
+    font-size: 20px;
+    margin: 10px 0px;
+    font-weight: 400;
+}
+
+.site-footer .contacts p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.site-footer .contacts{
+    max-width: 300px;
+    border-left: solid 2px rgba(237, 237, 237, 1);
+    padding: 20px 0px 20px 30px;
+}

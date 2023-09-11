@@ -4,10 +4,10 @@
             <meta charset="UTF-8">
             <title>Rashevi website</title>
             <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     </head>
 
     <body>
-        <div class="background">
             <header id="navbar-placeholder"></header>
         
             <script>
@@ -52,8 +52,15 @@
                     </p>
                 </div>
             </section>
-        </div>
-        
-    </body>
+            
+            <footer id="footer-placeholder"></footer>
 
+            <script>
+                fetch('../footer/footerbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+            </script>
+    </body>
 </html>
