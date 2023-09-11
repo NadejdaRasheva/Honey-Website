@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Rashevi website - Contacts</title>
+            <link rel="stylesheet" href="aboutUsStyle.css">
+    </head>
+
+    <body>
+        <header id="navbar-placeholder"></header>
+      
+        <script>
+            fetch('../navigation/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+        </script>
+
+
+        <section class="intro">
+            <h1 class="contacts-header">Повече информация за нас</h1>
+            <!-- <p>За каквито и да е въпроси както и за поръчки не се колебайте да се свържете с нас</p> -->
+        </section>
+
+        <section id="banner-placeholder"></section>
+
+        <script>
+            fetch('../banner/bannerbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('banner-placeholder').innerHTML = data;
+        });
+        </script>
+
+        <footer id="footer-placeholder"></footer>
+
+        <script>
+            fetch('../footer/footerbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+        </script>
+        
+
+    </body>
+
+</html>
