@@ -28,7 +28,7 @@ body{
 
 .intro h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     margin: 0px;
     padding: 10px;
     font-weight: 600;
@@ -39,11 +39,10 @@ body{
     font-size: 20px;
 }
 
-
-
 .full-width-banner {
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
     padding: 20px 0px 20px 0px;
@@ -73,9 +72,10 @@ body{
 
 .banner-picture {
     width: 40%;
+    height: auto;
     position:static;
     box-sizing: border-box;
-    object-fit: cover;
+    object-fit:fill;
     border-color: transparent;
     margin: 0px 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

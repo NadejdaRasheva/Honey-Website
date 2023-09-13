@@ -1,0 +1,16 @@
+@media (width <= 700px){
+    .full-width-banner{
+        flex-direction: column;
+    }
+
+    .banner-picture{
+        width: auto;
+    }
+}
+
+@media (width <= 1400px){
+    .banner-picture{
+        width: 50%;
+        height: 50%;
+    }
+}
