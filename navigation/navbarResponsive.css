@@ -3,3 +3,10 @@
         gap: 50px;
     }
 }
+
+@media (width <= 500px){
+    .links ul{
+        font-size: 12px;
+        gap: 30px;
+    }
+}
