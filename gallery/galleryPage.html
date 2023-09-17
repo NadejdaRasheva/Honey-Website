@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Rashevi website - Gallery</title>
+            <link rel="stylesheet" href="galleryStyle.css">
+    </head>
+
+    <body>
+        <header id="navbar-placeholder"></header>
+      
+        <script>
+            fetch('../navigation/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+        </script>
+
+
+        <section class="intro">
+            <h1 class="gallery-header">Галерия</h1>
+            <p>Разгледайте повече снимки както и още информация отноано продуктите ни</p>
+        </section>
+
+        <section id="banner-placeholder"></section>
+
+        <script>
+            fetch('../banner/bannerbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('banner-placeholder').innerHTML = data;
+        });
+        </script>
+
+        <section class="flipping-cards">
+            <ul>
+                <li class="card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="../images/IMG_8120.jpg" alt="akaciq" style="width:100%;height:auto;">
+                          </div>
+                          <div class="flip-card-back">
+                            <p>Акациевият мед се добива от цветовете на растението бяла акация. Той е изключително бистър, прозрачен почти безцветен с лек зеленикав (жълтеникав) оттенък. Вкусът му е много лек и нежен. Не се характеризира с особено силен аромат, което го прави идеален за подслаждане на всякакви плодови напитки, коктейли, чайове, дори и кафе, защото не променя аромата им. 
+                                Това, което го отличава от всички други видове нектарен мед е по-високото съдържание на фруктоза, което е причината, той да остава доста дълго време (1-2 години) в течно състояние. Тази негова характеристика го прави предпочитан за много от потребителите. Други негови предимства са: ниското съдържание на полени, което го прави по-подходящ за деца, защото е по-малка вероятността да предизвика алергии. Лесно се усвоява от организма и има нисък гликомичен индекс, което го прави подходящ за хора болни от диабет (тип II). Акациевият мед е добър антисептик, може да се използва при рани и кожни проблеми. Има успокояващо действие, подобрява съня и настроението. Помага при стомашни неразположения. Всички тези негови качества го правят един от най-предпочитаните видове, въпреки малко по-високата му цена, поради неблагоприятни климатични условия по време на цъфтежа на акацията и нейния кратък период на цъфтеж, съответно значително по-ниските добиви.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+        </section>
+        <footer id="footer-placeholder"></footer>
+
+        <script>
+            fetch('../footer/footerbar.html')
+                .then(response => response.text())
+                .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+        </script>
+    </body>
+</html>
